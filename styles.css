@@ -160,7 +160,7 @@ width: 80%;
 font-family: "Courier";
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 line-height: 150%;
 text-align: center;
 color: #495057;
@@ -221,10 +221,10 @@ color: #495057;
     .encriptado img {
     top: 0;
     display: none;
-    visibility: hidden;
+    width: 50%;
     }
     .mensaje-encriptado {
-    width: 60%;
+    width: 70%;
     top: 5%;
     }
 }
