@@ -4,6 +4,13 @@ let tituloMensaje = document.getElementById("Titulo-mensaje");
 let parrafo = document.getElementById("parrafo");
 let muñeco = document.getElementById("muñeco");
 
+let hasError = /[A-ZáéíóúÁÉÍÓÚ]/.test(texto);
+
+if (hasError) {
+    alert("Error: Solo se permiten letras minúsculas y sin acentos.");
+    return;
+}
+
 let textoCifrado = texto
     .replace(/e/gi, "enter")
     .replace(/i/gi, "imes")
@@ -31,7 +38,12 @@ function Desencriptar () {
     let parrafo = document.getElementById("parrafo");
     let muñeco = document.getElementById("muñeco");
 
+    let hasError = /[A-ZáéíóúÁÉÍÓÚ]/.test(texto);
 
+    if (hasError) {
+    alert("Error: Solo se permiten letras minúsculas y sin acentos.");
+    return;
+    }
     let textoCifrado = texto
     .replace(/enter/gi, "e")
     .replace(/imes/gi, "i")
@@ -50,5 +62,5 @@ function Desencriptar () {
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas Encriptar o Desencriptar";
         alert("Debes ingresar algún texto");
+        }
     }
-}

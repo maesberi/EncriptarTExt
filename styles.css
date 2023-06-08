@@ -23,6 +23,7 @@
     font-size: 32px;
     line-height: 150%;
     background-color: #f3f6fc;
+    background-repeat: no-repeat;
 }
 
 .texto::placeholder {
@@ -44,7 +45,7 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 82%;
+    top: 75%;
 }
 
 .terminos p {
@@ -54,7 +55,7 @@
     font-size: 12px;
     line-height: 150%;
     color: #495057;
-    opacity: 0.8;
+    opacity: 1;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -173,17 +174,30 @@ color: #495057;
     top: 15%;
 }
 
+.desarrollado {
+font-family: "century";
+font-style: italic;
+font-size: 18px;
+position: relative;
+text-align: center;
+}
+
+header {
+    text-align: center;
+    height: fit-content;
+}
+
 /* Responsive design */
-@media (max-width: 30cm) {
+@media (max-width: 600px) {
     .container {
     display: flex;
     flex-direction: row;
     }
     .encriptar {
-    width: 100%;
+    width: 70%;
     }
     .texto {
-    width: 80%;
+    width: 70%;
     height: 60%;
     left: 10%;
     top: 5%;
@@ -219,8 +233,8 @@ color: #495057;
     top: 80%;
     }
     .encriptado img {
+    width: 50%;
     top: 0;
-    display: none;
     width: 50%;
     }
     .mensaje-encriptado {
