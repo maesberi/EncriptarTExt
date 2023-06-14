@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -69,7 +70,7 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 82%;
+    top: 78%;
 }
 
 .btn-encriptar {
@@ -188,7 +189,7 @@ text-align: center;
 }
 
 /* Responsive design */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .container {
     display: flex;
     flex-direction: column;

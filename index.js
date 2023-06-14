@@ -7,7 +7,7 @@ let muñeco = document.getElementById("muñeco");
 let hasError = /[A-ZáéíóúÁÉÍÓÚ]/.test(texto);
 
 if (hasError) {
-    alert("Error: Solo se permiten letras minúsculas y sin acentos.");
+    alert("Solo se permiten letras minúsculas y sin acentos.");
     return;
 }
 
@@ -41,7 +41,7 @@ function Desencriptar () {
     let hasError = /[A-ZáéíóúÁÉÍÓÚ]/.test(texto);
 
     if (hasError) {
-    alert("Error: Solo se permiten letras minúsculas y sin acentos.");
+    alert("Solo se permiten letras minúsculas y sin acentos.");
     return;
     }
     let textoCifrado = texto
